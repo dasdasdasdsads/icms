@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="icms-api" />
+        <module name="icms-dao" />
+        <module name="icms-domain" />
+        <module name="icms-service" />
+        <module name="icms-utils" />
+        <module name="icms-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="icms-api" target="1.5" />
+      <module name="icms-dao" target="1.5" />
+      <module name="icms-domain" target="1.5" />
+      <module name="icms-parent" target="1.5" />
+      <module name="icms-service" target="1.5" />
+      <module name="icms-utils" target="1.5" />
+      <module name="icms-web" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="DEBUGGING_INFO" value="false" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/icms-api/icms-api.iml" filepath="$PROJECT_DIR$/icms-api/icms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/icms-dao/icms-dao.iml" filepath="$PROJECT_DIR$/icms-dao/icms-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/icms-domain/icms-domain.iml" filepath="$PROJECT_DIR$/icms-domain/icms-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/icms-parent.iml" filepath="$PROJECT_DIR$/icms-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/icms-service/icms-service.iml" filepath="$PROJECT_DIR$/icms-service/icms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/icms-utils/icms-utils.iml" filepath="$PROJECT_DIR$/icms-utils/icms-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/icms-web/icms-web.iml" filepath="$PROJECT_DIR$/icms-web/icms-web.iml" />
+    </modules>
+  </component>
+</project>

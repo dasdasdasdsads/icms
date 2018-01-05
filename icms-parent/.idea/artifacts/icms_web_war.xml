@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="icms-web:war">
+    <output-path>$PROJECT_DIR$/icms-web/target</output-path>
+    <root id="archive" name="icms-web.war">
+      <element id="artifact" artifact-name="icms-web:war exploded" />
+    </root>
+  </artifact>
+</component>

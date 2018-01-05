@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+        default-lazy-init="false" >
+
+        <!-- 1.提供方应用信息，用于计算依赖关系 -->
+    <dubbo:application name="xs_provider" />
+
+    <!-- 使用multicast广播注册中心暴露服务地址 -->
+    <!--<dubbo:registry address="multicast://224.5.6.7:1234" /> -->
+
+    <!-- 2.使用zookeeper注册中心暴露服务地址  即zookeeper的所在服务器ip地址和端口号 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+
+    <!-- 3：dubbo://127.0.0.1:20880  默认  设置提供服务的端口号 -->
+    <dubbo:protocol name="dubbo" port="20880" />
+
+    <!-- 4： 暴露实现类-->
+    <!--<dubbo:service interface="cn.xhl.icms.service.sys.sysUser.IcmsSysUserService" ref="icmsSysUserService"/>-->
+
+    <!-- 使用注解方式暴露接口 -->
+    <dubbo:annotation package="cn.xhl.icms.service" />
+    <!-- 加入spring注解扫描 -->
+    <context:component-scan base-package="cn.xhl.icms.service"/>
+
+
+</beans>
